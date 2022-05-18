@@ -1,0 +1,12 @@
+<p>welcome works!</p>
+<a class="nav-link" routerLink="/logout">Logout</a>
+<div *ngFor="let day of Weekdays">
+    <ng-container *ngIf =
+        "(day == 'Saturday' || day == 'Sunday'); else elseTemplate">
+      <p><b>{{day}} is a weekend</b></p>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <p>{{day}} is not a weekend</p>
+    </ng-template>
+    </div>
+    
