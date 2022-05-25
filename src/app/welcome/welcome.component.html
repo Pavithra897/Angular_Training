@@ -1,4 +1,4 @@
-<p>welcome works!</p>
+<!-- <p>welcome works!</p>
 <a class="nav-link" routerLink="/logout">Logout</a>
 <div *ngFor="let day of Weekdays">
     <ng-container *ngIf =
@@ -8,5 +8,8 @@
     <ng-template #elseTemplate>
       <p>{{day}} is not a weekend</p>
     </ng-template>
-    </div>
-    
+    </div> -->
+    <app-header [myinputMsg]="myInputMessage" (myOutput) ="GetChildData($event)"></app-header>
+    <app-sidebar></app-sidebar>
+    <app-content-area></app-content-area>
+    <app-footer></app-footer>

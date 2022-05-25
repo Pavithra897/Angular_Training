@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-welcome',
@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent {
+  
+  myInputMessage:string ="I am the parent comppnent"  
+ 
+
   Weekdays:Array<String> =[
     'Sunday', 'Monday', 'Tuesday',
     'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -13,7 +17,11 @@ export class WelcomeComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    
   }
-
+  GetChildData(data: any){  
+    console.log(data);  
+ }  
+ 
 }

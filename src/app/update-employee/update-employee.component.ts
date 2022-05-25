@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EmployeeService } from '../employee.service';
+import { EmployeeService } from '../service/employee.service';
 import { Employee } from '../employee';
 import { ActivatedRoute,Router } from '@angular/router';
 
@@ -9,7 +9,7 @@ import { ActivatedRoute,Router } from '@angular/router';
   styleUrls: ['./update-employee.component.css']
 })
 export class UpdateEmployeeComponent implements OnInit {
-  id!: number;
+  id: number;
   employee:Employee=new Employee();
   constructor(private employeeService: EmployeeService,
     private route: ActivatedRoute,

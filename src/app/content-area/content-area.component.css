@@ -1,0 +1,8 @@
+.article{
+    padding: 20px;
+    width: 70%;
+    height: 300px; /* only for demonstration, should be removed */
+    position: absolute;
+    left: 17%;
+    top: 50px;
+}

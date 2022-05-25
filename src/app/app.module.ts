@@ -15,6 +15,11 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { ContentAreaComponent } from './content-area/content-area.component';
+import { FooterComponent } from './footer/footer.component';
+import { AddressComponent } from './address/address.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     CreateEmployeeComponent,
     UpdateEmployeeComponent,
     EmployeeDetailsComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    HeaderComponent,
+    SidebarComponent,
+    ContentAreaComponent,
+    FooterComponent,
+    AddressComponent
   ],
   imports: [
     BrowserModule,
