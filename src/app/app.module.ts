@@ -20,6 +20,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentAreaComponent } from './content-area/content-area.component';
 import { FooterComponent } from './footer/footer.component';
 import { AddressComponent } from './address/address.component';
+import { EmployeeFullDetailsComponent } from './employee-full-details/employee-full-details.component';
+import { LazyDemoComponent } from './lazy-demo/lazy-demo.component';
+import { FilterpipeComponent } from './filterpipe/filterpipe.component';
+import { CustompipeComponent } from './custompipe/custompipe.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +39,11 @@ import { AddressComponent } from './address/address.component';
     SidebarComponent,
     ContentAreaComponent,
     FooterComponent,
-    AddressComponent
+    AddressComponent,
+    EmployeeFullDetailsComponent,
+    LazyDemoComponent,
+    FilterpipeComponent,
+    CustompipeComponent
   ],
   imports: [
     BrowserModule,

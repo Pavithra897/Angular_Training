@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   userName!: string;
   password!: string;
   formData!: FormGroup;    
-
+   
   constructor(private toastrService: ToastrService,private authService: AuthService,private router: Router) { }
 
   ngOnInit(): void {

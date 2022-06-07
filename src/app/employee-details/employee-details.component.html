@@ -1,12 +1,12 @@
-<h3> View Employee Details</h3>
-<div>
+<h3 [ngStyle]="setCurrentStyles()"> {{ 'View Employee Details' | titlecase}}</h3>
+<div >
     <div>
-        <label> <b> First Name: </b></label> {{employee?.firstName}}
+        <label> <b> First Name: </b></label> {{employee?.firstName  | uppercase}}
     </div>
     <div>
-        <label> <b> Last Name: </b></label> {{employee?.lastName}}
+        <label> <b> Last Name: </b></label> {{employee?.lastName  | uppercase}}
     </div>
     <div>
-        <label> <b> Email Id: </b></label> {{employee?.emailId}}
+        <label> <b> Email Id: </b></label> {{employee?.email}}
     </div>
 </div>

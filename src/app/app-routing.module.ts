@@ -10,6 +10,7 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { HeaderComponent } from './header/header.component';
 import { AddressComponent } from './address/address.component';
+import { CustompipeComponent } from './custompipe/custompipe.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent},
@@ -23,6 +24,12 @@ const routes: Routes = [
   { path: 'createemployee', component: CreateEmployeeComponent, },
   { path: 'updateemployee/:id', component: UpdateEmployeeComponent},
   { path: 'employeedetails/:id', component: EmployeeDetailsComponent},
+  { path: 'custompipe', component: CustompipeComponent},
+  {  
+    path: 'lazy-loading',  
+    loadChildren: () => import('./lazy-loading/lazy-loading.module')  
+    .then(m => m.LazyLoadingModule)  
+ },  
   { path: '', redirectTo: 'employees', pathMatch: 'full'},
   { path: '**', redirectTo: '', pathMatch: 'full'},
 ];
